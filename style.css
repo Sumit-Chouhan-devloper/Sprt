@@ -28,10 +28,10 @@
     #fff;
   background-size: 100%;
 
-  transition: background-size 400ms linear;
+  transition: background-size 300ms linear;
 }
 .common_button:hover {
-  background-size: 200%;
+  background-size: 400%;
 }
 .common_circle {
   fill: radial-gradient(
