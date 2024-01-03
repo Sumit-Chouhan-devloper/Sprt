@@ -210,6 +210,19 @@
     background: linear-gradient(176.26deg, #3ad0f3 -163.94%, #8c01be 130.09%);
     bottom: 0;
   }
+  
+.card_date {
+  border-radius: 0px 50px 50px 0px;
+  background: rgba(255, 255, 255, 0.02);
+  backdrop-filter: blur(20px);
+}
+.card_date_2 {
+  background: rgba(255, 255, 255, 0.02);
+}
+.card_date_3 {
+  background: rgba(255, 255, 255, 0.02);
+}
+
   @media (max-width: 576.98px) {
     .Community_owned_card::after {
       width: 0px;
