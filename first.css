@@ -65,10 +65,29 @@
   opacity: 0.56 !important;
   filter: blur(50px) !important;
 }
+.gallery_blur_circle {
+    opacity: 0.4 !important;
+    background: radial-gradient(
+      120.14% 119.17% at 93.56% 8%,
+      #00e0f7 0%,
+      #8b00bd 93.65%
+    );
+    filter: blur(100px);
+  }
 
 @media (min-width: 1024px) {
   .nav_bg {
     background: rgba(255, 255, 255, 0.06);
   }
 }
-/* npx tailwindcss -i ./secound.css -o ./output.css --watch  */
+.tab_border.active::after {
+    content: "";
+    position: absolute;
+     bottom: 0;
+    display: block;
+    height: 3px;
+    border-radius: 10px;
+    width: 100%;
+    background: radial-gradient(120.14% 119.17% at 93.56% 58%, rgba(0, 224, 247, 0.80) 0%, #8B00BD 88.12%);
+  }
+
