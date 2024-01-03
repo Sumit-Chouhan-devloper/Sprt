@@ -1,0 +1,52 @@
+.common_button_border {
+  background: radial-gradient(
+      120.14% 119.17% at 93.56% 8%,
+      #00e0f7 0%,
+      #8b00bd 72.13%
+    ),
+    #fff;
+  box-shadow: 0px 0px 6px 0px rgba(118, 35, 198, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background-size: 104% 108%;
+  background-position-x: -1px;
+  background-position-y: -1px;
+}
+.common_button {
+  border-radius: 110px;
+  background: radial-gradient(
+      120.14% 119.17% at 93.56% 8%,
+      #00e0f7 0%,
+      #8b00bd 72.13%
+    ),
+    #fff;
+  background-size: 100%;
+
+  transition: background-size 400ms linear;
+}
+.common_button:hover {
+  background-size: 200%;
+}
+.common_circle {
+  fill: radial-gradient(
+    120.14% 119.17% at 93.56% 8%,
+    #00e0f7 0%,
+    #8b00bd 93.65%
+  );
+  opacity: 0.56;
+  filter: blur(50px);
+}
+.blur_left_circle {
+  opacity: 0.12 !important;
+  background: radial-gradient(
+    120.14% 119.17% at 93.56% 8%,
+    #00e0f7 0%,
+    #8b00bd 93.65%
+  ) !important;
+  filter: blur(100px) !important;
+}
+
+@media (min-width: 1024px) {
+  .nav_bg {
+    background: rgba(255, 255, 255, 0.06);
+  }
+}
