@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 .common_button_border {
   background: radial-gradient(
       120.14% 119.17% at 93.56% 8%,
@@ -44,9 +48,27 @@
   ) !important;
   filter: blur(100px) !important;
 }
+.blur_right_circle {
+  background: radial-gradient(
+    120.14% 119.17% at 93.56% 8%,
+    #00e0f7 0%,
+    #8b00bd 93.65%
+  );
+  filter: blur(100px);
+}
+.mobile_blur_ellip {
+  background: radial-gradient(
+    120.14% 119.17% at 93.56% 8%,
+    #00e0f7 0%,
+    #8b00bd 93.65%
+  ) !important;
+  opacity: 0.56 !important;
+  filter: blur(50px) !important;
+}
 
 @media (min-width: 1024px) {
   .nav_bg {
     background: rgba(255, 255, 255, 0.06);
   }
 }
+/* npx tailwindcss -i ./secound.css -o ./output.css --watch  */
