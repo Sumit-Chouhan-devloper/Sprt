@@ -1,425 +1,425 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="./first.css">
-    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
-  </head>
-  <body>
-    <div>
-      <header
-        class="bg-[url('/assets/images/png/hero-mobile-bg.png')] sm:bg-[url('/assets/images/png/hero-bg.png')] bg-no-repeat min-h-screen flex flex-col bg-cover pt-4 sm:pt-5 relative"
-      >
-        <div
-          class="bg-gradient-to-b z-20 from-black via-transparent to-transparent w-full h-[106px] rotate-180 bottom-0 absolute"></div>
-        <!-------------------------------------------------- nav bar --------------------------------------------->
-        <nav class="px-3 container mx-auto lg:max-w-[1240px]">
-          <div
-            class="flex justify-between items-center container mx-auto py-2 sm:py-[10px] sm:px-5 lg:px-12 nav_bg rounded-full"
-          >
-            <a href="#"
-              ><img
-                class="sm:h-[60px] sm:w-[60px] h-12 w-12"
-                height="60"
-                width="60"
-                src="./assets/images/png/logo.png"
-                alt="logo"
-            /></a>
-            <div class="hidden lg:block">
-              <div class="flex gap-[32px] items-center">
-                <a
-                  class="ff_k2d opacity-70 text-white hover:text-[#00E0F7] transition-all duration-300"
-                  href=""
-                  >Home</a
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet" href="./first.css">
+        <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    </head>
+    <body>
+        <div>
+        <header
+            class="bg-[url('/assets/images/png/hero-mobile-bg.png')] sm:bg-[url('/assets/images/png/hero-bg.png')] bg-no-repeat min-h-screen flex flex-col bg-cover pt-4 sm:pt-5 relative"
+        >
+            <div
+            class="bg-gradient-to-b z-20 from-black via-transparent to-transparent w-full h-[106px] rotate-180 bottom-0 absolute"></div>
+            <!-------------------------------------------------- nav bar --------------------------------------------->
+            <nav class="px-3 container mx-auto lg:max-w-[1240px]">
+            <div
+                class="flex justify-between items-center container mx-auto py-2 sm:py-[10px] sm:px-5 lg:px-12 nav_bg rounded-full"
+            >
+                <a href="#"
+                ><img
+                    class="sm:h-[60px] sm:w-[60px] h-12 w-12"
+                    height="60"
+                    width="60"
+                    src="./assets/images/png/logo.png"
+                    alt="logo"
+                /></a>
+                <div class="hidden lg:block">
+                <div class="flex gap-[32px] items-center">
+                    <a
+                    class="ff_k2d opacity-70 text-white hover:text-[#00E0F7] transition-all duration-300"
+                    href=""
+                    >Home</a
+                    >
+                    <a
+                    class="ff_k2d opacity-70 text-white hover:text-[#00E0F7] transition-all duration-300"
+                    href=""
+                    >About Us</a
+                    >
+                    <a
+                    class="ff_k2d opacity-70 text-white hover:text-[#00E0F7] transition-all duration-300"
+                    href=""
+                    >Our Mission</a
+                    >
+                    <a
+                    class="ff_k2d opacity-70 text-white hover:text-[#00E0F7] transition-all duration-300"
+                    href=""
+                    >Art Showcase</a
+                    >
+                    <a
+                    class="ff_k2d opacity-70 text-white hover:text-[#00E0F7] transition-all duration-300"
+                    href=""
+                    >Community</a
+                    >
+                    <a
+                    class="ff_k2d opacity-70 text-white hover:text-[#00E0F7] transition-all duration-300"
+                    href=""
+                    >Get Involved</a
+                    >
+                    <div
+                    class="flex justify-center items-center rounded-full common_button_border"
+                    >
+                    <button
+                        class="common_button px-5 py-3 text-white font-semibold"
+                    >
+                        Contact Us
+                    </button>
+                    </div>
+                </div>
+                </div>
+                <div class="flex lg:hidden">
+                <button
+                    onclick="toggleMenu()"
+                    type="button"
+                    class="relative z-20"
                 >
-                <a
-                  class="ff_k2d opacity-70 text-white hover:text-[#00E0F7] transition-all duration-300"
-                  href=""
-                  >About Us</a
-                >
-                <a
-                  class="ff_k2d opacity-70 text-white hover:text-[#00E0F7] transition-all duration-300"
-                  href=""
-                  >Our Mission</a
-                >
-                <a
-                  class="ff_k2d opacity-70 text-white hover:text-[#00E0F7] transition-all duration-300"
-                  href=""
-                  >Art Showcase</a
-                >
-                <a
-                  class="ff_k2d opacity-70 text-white hover:text-[#00E0F7] transition-all duration-300"
-                  href=""
-                  >Community</a
-                >
-                <a
-                  class="ff_k2d opacity-70 text-white hover:text-[#00E0F7] transition-all duration-300"
-                  href=""
-                  >Get Involved</a
+                    <span id="menu-icon" class="block text-white">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="w-8 h-8"
+                    >
+                        <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                        />
+                    </svg>
+                    </span>
+                    <span id="cross-icon" class="hidden text-white">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                        class="h-8 w-8"
+                    >
+                        <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M6 18L18 6M6 6l12 12"
+                        ></path>
+                    </svg>
+                    </span>
+                </button>
+                </div>
+                <div
+                id="mobile-menu"
+                class="lg:hidden transition-all duration-300 absolute h-screen left-0 w-screen z-10 top-0 translate-x-[-100%] backdrop-blur-2xl"
                 >
                 <div
-                  class="flex justify-center items-center rounded-full common_button_border"
+                    class="gap-5 text-white font-medium flex items-center flex-col justify-center h-full"
                 >
-                  <button
-                    class="common_button px-5 py-3 text-white font-semibold"
-                  >
-                    Contact Us
-                  </button>
+                    <a
+                    onclick="toggleMenu()"
+                    class="ff_k2d opacity-70 text-white hover:text-[#00E0F7] transition-all duration-300"
+                    href=""
+                    >Home</a
+                    >
+                    <a
+                    onclick="toggleMenu()"
+                    class="ff_k2d opacity-70 text-white hover:text-[#00E0F7] transition-all duration-300"
+                    href=""
+                    >About Us</a
+                    >
+                    <a
+                    onclick="toggleMenu()"
+                    class="ff_k2d opacity-70 text-white hover:text-[#00E0F7] transition-all duration-300"
+                    href=""
+                    >Our Mission</a
+                    >
+                    <a
+                    onclick="toggleMenu()"
+                    class="ff_k2d opacity-70 text-white hover:text-[#00E0F7] transition-all duration-300"
+                    href=""
+                    >Art Showcase</a
+                    >
+                    <a
+                    onclick="toggleMenu()"
+                    class="ff_k2d opacity-70 text-white hover:text-[#00E0F7] transition-all duration-300"
+                    href=""
+                    >Community</a
+                    >
+                    <a
+                    onclick="toggleMenu()"
+                    class="ff_k2d opacity-70 text-white hover:text-[#00E0F7] transition-all duration-300"
+                    href=""
+                    >Get Involved</a
+                    >
+                    <button
+                    onclick="toggleMenu()"
+                    class="common_button bg-white px-6 rounded-full py-3"
+                    >
+                    Join the Spirit
+                    </button>
                 </div>
-              </div>
+                </div>
             </div>
-            <div class="flex lg:hidden">
-              <button
-                onclick="toggleMenu()"
-                type="button"
-                class="relative z-20"
-              >
-                <span id="menu-icon" class="block text-white">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke-width="1.5"
-                    stroke="currentColor"
-                    class="w-8 h-8"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
-                    />
-                  </svg>
-                </span>
-                <span id="cross-icon" class="hidden text-white">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    class="h-8 w-8"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M6 18L18 6M6 6l12 12"
-                    ></path>
-                  </svg>
-                </span>
-              </button>
-            </div>
+            </nav>
+            <!----------------------------------------- hero section----------------------------------------------- -->
             <div
-              id="mobile-menu"
-              class="lg:hidden transition-all duration-300 absolute h-screen left-0 w-screen z-10 top-0 translate-x-[-100%] backdrop-blur-2xl"
+            class="grow flex xl:justify-center items-center flex-col mt-[60px] xl:mt-[unset] px-3 container mx-auto lg:max-w-[1140px]"
             >
-              <div
-                class="gap-5 text-white font-medium flex items-center flex-col justify-center h-full"
-              >
-                <a
-                  onclick="toggleMenu()"
-                  class="ff_k2d opacity-70 text-white hover:text-[#00E0F7] transition-all duration-300"
-                  href=""
-                  >Home</a
-                >
-                <a
-                  onclick="toggleMenu()"
-                  class="ff_k2d opacity-70 text-white hover:text-[#00E0F7] transition-all duration-300"
-                  href=""
-                  >About Us</a
-                >
-                <a
-                  onclick="toggleMenu()"
-                  class="ff_k2d opacity-70 text-white hover:text-[#00E0F7] transition-all duration-300"
-                  href=""
-                  >Our Mission</a
-                >
-                <a
-                  onclick="toggleMenu()"
-                  class="ff_k2d opacity-70 text-white hover:text-[#00E0F7] transition-all duration-300"
-                  href=""
-                  >Art Showcase</a
-                >
-                <a
-                  onclick="toggleMenu()"
-                  class="ff_k2d opacity-70 text-white hover:text-[#00E0F7] transition-all duration-300"
-                  href=""
-                  >Community</a
-                >
-                <a
-                  onclick="toggleMenu()"
-                  class="ff_k2d opacity-70 text-white hover:text-[#00E0F7] transition-all duration-300"
-                  href=""
-                  >Get Involved</a
-                >
-                <button
-                  onclick="toggleMenu()"
-                  class="common_button bg-white px-6 rounded-full py-3"
-                >
-                  Join the Spirit
-                </button>
-              </div>
-            </div>
-          </div>
-        </nav>
-        <!----------------------------------------- hero section----------------------------------------------- -->
-        <div
-          class="grow flex xl:justify-center items-center flex-col mt-[60px] xl:mt-[unset] px-3 container mx-auto lg:max-w-[1140px]"
-        >
-          <div
-            class="border border_color py-3 px-5 inline-block rounded-[81px] mb-3 sm:mb-4"
-          >
-            <p class="font-semibold leading-[120%] text-[#01DFF7] ff_k2d">
-              Welcome to SPRT
-            </p>
-          </div>
-          <h1
-            class="ff_Oswald text-white font-bold leading-[120%] max-w-[611px] mx-auto text-center text-[32px] sm:text-[40px] md:text-5xl lg:text-[80px]"
-          >
-            Solanas Spirited
-            <span class="block"
-              ><span class="text-[#00E0F7]">AI Meme</span> Hub</span
-            >
-          </h1>
-          <p
-            class="ff_k2d text-white max-w-[629px] mx-auto text-center opacity-70 mt-2 mb-6 sm:mb-8"
-          >
-            We are a vibrant AI hub within the Solana ecosystem, dedicated to
-            crafting meme-based art that transcends boundaries and sparks the
-            imagination. We represent the true Spirit of Solana - uniting in our
-            pursuit to be the best!
-          </p>
-          <div>
-            <div class="rounded-full inline-block common_button_border">
-              <button class="common_button px-5 py-3 text-white font-semibold">
-                Join the Spirit
-              </button>
-            </div>
-          </div>
-        </div>
-        <div class="flex items-end justify-between">
-          <div class="sm:w-5/12 w-7/12">
-            <img
-              class="xl:h-[496px] lg:!w-[30%] !w-full xl:w-[28%] 2xl:w-[20%] relative left-[-20px] lg:absolute bottom-0 lg:left-0"
-              src="./assets/images/png/hero-left.png"
-              alt="men"
-            />
-          </div>
-          <div class="w-5/12 sm:w-4/12">
-            <img
-              class="h-[409px] xl:h-[631px] xl:min-h-[631px] w-full md:w-[75%] md:h-[442px] xl:top-[14%] xl:right-[6%] 2xl:right-[2%] lg:w-[24%] lg:bottom-0 lg:absolute"
-              src="./assets/images/webp/hero-right.png"
-              alt="men"
-            />
-          </div>
-        </div>
-      </header>
-      <!------------------------------------------ community section ----------------------------------------->
-      <div
-        class="relative bg-[url('/assets/images/png/community-bg.png')] bg-no-repeat bg-cover pt-[100px] lg:pt-[160px] overflow-x-hidden"
-      >
-      <div
-          class="bg-gradient-to-b z-20 from-black via-transparent to-transparent w-full h-[131px]  top-0 absolute"
-        ></div>
-      <div class="rounded-full h-[587px] absolute top-[-24%] left-[-15%] w-[587px] z-20 blur_left_circle hidden md:block"></div>
-        <div
-          class="bg-gradient-to-t from-black via-transparent to-transparent w-full h-[231px] z-10 rotate-180 top-0 absolute"
-        ></div>
-
-        <div class="px-3 container mx-auto lg:max-w-[1140px]">
-          <div class="flex justify-center lg:justify-between flex-wrap">
-            <div class="lg:w-6/12">
-              <div
+            <div
                 class="border border_color py-3 px-5 inline-block rounded-[81px] mb-3 sm:mb-4"
-              >
+            >
                 <p class="font-semibold leading-[120%] text-[#01DFF7] ff_k2d">
-                  About Us
+                Welcome to SPRT
                 </p>
-              </div>
-              <h3
-                class="ff_Oswald text-white lg:text-5xl md:text-4xl sm:text-[32px] text-[28px] text-center sm:text-start"
-              >
-                SPRT is a community-driven movement.
-              </h3>
-              <p class="ff_k2d text-white opacity-70 pt-4 pb-6 sm:pb-8 text-center sm:text-start">
-                We're a collective of artists, creators, and Solana enthusiasts
-                passionate about pushing the boundaries of imagination and
-                possibilities through cartoon-based AI art on the Solana
-                blockchain.
-              </p>
-              <div class="flex flex-wrap justify-center sm:justify-start gap-12 mb-8">
-                <button
-                  class="ff_k2d text-white font-bold tab-button"
-                  onclick="showTab('tab1')"
-                >
-                  Emphasize creativity
-                </button>
-                <button
-                  class="ff_k2d text-white font-bold tab-button"
-                  onclick="showTab('tab2')"
-                >
-                  Community
-                </button>
-                <button
-                  class="ff_k2d text-white font-bold tab-button"
-                  onclick="showTab('tab3')"
-                >
-                  Innovation
-                </button>
-                <button
-                  class="ff_k2d text-white font-bold tab-button"
-                  onclick="showTab('tab4')"
-                >
-                  Humor
-                </button>
-              </div>
-              <div class="rounded-full inline-block common_button_border">
-                <button
-                  class="common_button px-5 py-3 text-white font-semibold"
-                >
-                  Read More
-                </button>
-              </div>
             </div>
-            <div class="lg:w-5/12 md:w-8/12 xl:w-4/12 mt-6 lg:mt-0 sm:w-10/12 w-11/12">
-              <div
-                class="border-2 border-white border-opacity-10 backdrop-blur-2xl rounded-xl min-h-[436px]"
-              >
-                <div id="tab1" class="tab-content hidden px-5 py-12">
-                  <div class="flex justify-center">
-                    <img
-                      src="./assets/images/svg/community-card1.svg"
-                      alt="icon"
-                    />
-                  </div>
-                  <h2
-                    class="ff_Oswald text-white text-xl sm:text-2xl lg:text-[28px] font-bold pt-5 pb-4 text-center"
-                  >
+            <h1
+                class="ff_Oswald text-white font-bold leading-[120%] max-w-[611px] mx-auto text-center text-[32px] sm:text-[40px] md:text-5xl lg:text-[80px]"
+            >
+                Solanas Spirited
+                <span class="block"
+                ><span class="text-[#00E0F7]">AI Meme</span> Hub</span
+                >
+            </h1>
+            <p
+                class="ff_k2d text-white max-w-[629px] mx-auto text-center opacity-70 mt-2 mb-6 sm:mb-8"
+            >
+                We are a vibrant AI hub within the Solana ecosystem, dedicated to
+                crafting meme-based art that transcends boundaries and sparks the
+                imagination. We represent the true Spirit of Solana - uniting in our
+                pursuit to be the best!
+            </p>
+            <div>
+                <div class="rounded-full inline-block common_button_border">
+                <button class="common_button px-5 py-3 text-white font-semibold">
+                    Join the Spirit
+                </button>
+                </div>
+            </div>
+            </div>
+            <div class="flex items-end justify-between">
+            <div class="sm:w-5/12 w-7/12">
+                <img
+                class="xl:h-[496px] lg:!w-[30%] !w-full xl:w-[28%] 2xl:w-[20%] relative left-[-20px] lg:absolute bottom-0 lg:left-0"
+                src="./assets/images/png/hero-left.png"
+                alt="men"
+                />
+            </div>
+            <div class="w-5/12 sm:w-4/12">
+                <img
+                class="h-[409px] xl:h-[631px] xl:min-h-[631px] w-full md:w-[75%] md:h-[442px] xl:top-[14%] xl:right-[6%] 2xl:right-[2%] lg:w-[24%] lg:bottom-0 lg:absolute"
+                src="./assets/images/webp/hero-right.png"
+                alt="men"
+                />
+            </div>
+            </div>
+        </header>
+        <!------------------------------------------ community section ----------------------------------------->
+        <div
+            class="relative bg-[url('/assets/images/png/community-bg.png')] bg-no-repeat bg-cover pt-[100px] lg:pt-[160px] overflow-x-hidden"
+        >
+        <div
+            class="bg-gradient-to-b z-20 from-black via-transparent to-transparent w-full h-[131px]  top-0 absolute"
+            ></div>
+        <div class="rounded-full h-[587px] absolute top-[-24%] left-[-15%] w-[587px] z-20 blur_left_circle hidden md:block"></div>
+            <div
+            class="bg-gradient-to-t from-black via-transparent to-transparent w-full h-[231px] z-10 rotate-180 top-0 absolute"
+            ></div>
+
+            <div class="px-3 container mx-auto lg:max-w-[1140px]">
+            <div class="flex justify-center lg:justify-between flex-wrap">
+                <div class="lg:w-6/12">
+                <div
+                    class="border border_color py-3 px-5 inline-block rounded-[81px] mb-3 sm:mb-4"
+                >
+                    <p class="font-semibold leading-[120%] text-[#01DFF7] ff_k2d">
+                    About Us
+                    </p>
+                </div>
+                <h3
+                    class="ff_Oswald text-white lg:text-5xl md:text-4xl sm:text-[32px] text-[28px] text-center sm:text-start"
+                >
+                    SPRT is a community-driven movement.
+                </h3>
+                <p class="ff_k2d text-white opacity-70 pt-4 pb-6 sm:pb-8 text-center sm:text-start">
+                    We're a collective of artists, creators, and Solana enthusiasts
+                    passionate about pushing the boundaries of imagination and
+                    possibilities through cartoon-based AI art on the Solana
+                    blockchain.
+                </p>
+                <div class="flex flex-wrap justify-center sm:justify-start gap-12 mb-8">
+                    <button
+                    class="ff_k2d text-white font-bold tab-button"
+                    onclick="showTab('tab1')"
+                    >
                     Emphasize creativity
-                  </h2>
-                  <p class="ff_k2d text-white text-center opacity-70">
-                    SPRT thrives on boundless creativity. We encourage our
-                    community to unleash their imagination, pushing the
-                    boundaries of artistic expression. From futuristic cyberpunk
-                    designs to playful memes, every creation is an opportunity
-                    to explore new artistic horizons.
-                  </p>
-                </div>
-
-                <div id="tab2" class="tab-content hidden px-5 py-12">
-                  <div class="flex justify-center">
-                    <img
-                      src="./assets/images/svg/community-card2.svg"
-                      alt="icon"
-                    />
-                  </div>
-                  <h2
-                    class="ff_Oswald text-white text-xl sm:text-2xl lg:text-[28px] font-bold pt-5 pb-4 text-center"
-                  >
+                    </button>
+                    <button
+                    class="ff_k2d text-white font-bold tab-button"
+                    onclick="showTab('tab2')"
+                    >
                     Community
-                  </h2>
-                  <p class="ff_k2d text-white text-center opacity-70">
-                    Our community is the heart and soul of SPRT. We're a
-                    diverse, passionate group of artists, technologists, and
-                    enthusiasts united by a common love for art, technology, and
-                    humor. Together, we collaborate, share ideas, and build a
-                    vibrant space where everyone's voice is heard and valued.
-                  </p>
-                </div>
-
-                <div id="tab3" class="tab-content hidden px-5 py-12">
-                  <div class="flex justify-center">
-                    <img
-                      src="./assets/images/svg/community-card3.svg"
-                      alt="icon"
-                    />
-                  </div>
-                  <h2
-                    class="ff_Oswald text-white text-xl sm:text-2xl lg:text-[28px] font-bold pt-5 pb-4 text-center"
-                  >
+                    </button>
+                    <button
+                    class="ff_k2d text-white font-bold tab-button"
+                    onclick="showTab('tab3')"
+                    >
                     Innovation
-                  </h2>
-                  <p class="ff_k2d text-white text-center opacity-70">
-                    At SPRT, innovation is our hallmark. We're pioneers in
-                    blending AI technology with artistic endeavors on the Solana
-                    blockchain. Our commitment to innovation drives us to
-                    constantly explore new possibilities, disrupting
-                    conventional norms to create something truly unique in the
-                    crypto art space.
-                  </p>
-                </div>
-                <div id="tab4" class="tab-content hidden px-5 py-12">
-                  <div class="flex justify-center">
-                    <img
-                      src="./assets/images/svg/community-card4.svg"
-                      alt="icon"
-                    />
-                  </div>
-                  <h2
-                    class="ff_Oswald text-white text-xl sm:text-2xl lg:text-[28px] font-bold pt-5 pb-4 text-center"
-                  >
+                    </button>
+                    <button
+                    class="ff_k2d text-white font-bold tab-button"
+                    onclick="showTab('tab4')"
+                    >
                     Humor
-                  </h2>
-                  <p class="ff_k2d text-white text-center opacity-70">
-                    Laughter is the essence of SPRT. Humor infuses life into our
-                    creations, making them not just visually appealing but also
-                    enjoyable. We believe in the power of humor to connect,
-                    resonate, and spread joy across our community and beyond.
-                  </p>
+                    </button>
                 </div>
-              </div>
+                <div class="rounded-full inline-block common_button_border">
+                    <button
+                    class="common_button px-5 py-3 text-white font-semibold"
+                    >
+                    Read More
+                    </button>
+                </div>
+                </div>
+                <div class="lg:w-5/12 md:w-8/12 xl:w-4/12 mt-6 lg:mt-0 sm:w-10/12 w-11/12">
+                <div
+                    class="border-2 border-white border-opacity-10 backdrop-blur-2xl rounded-xl min-h-[436px]"
+                >
+                    <div id="tab1" class="tab-content hidden px-5 py-12">
+                    <div class="flex justify-center">
+                        <img
+                        src="./assets/images/svg/community-card1.svg"
+                        alt="icon"
+                        />
+                    </div>
+                    <h2
+                        class="ff_Oswald text-white text-xl sm:text-2xl lg:text-[28px] font-bold pt-5 pb-4 text-center"
+                    >
+                        Emphasize creativity
+                    </h2>
+                    <p class="ff_k2d text-white text-center opacity-70">
+                        SPRT thrives on boundless creativity. We encourage our
+                        community to unleash their imagination, pushing the
+                        boundaries of artistic expression. From futuristic cyberpunk
+                        designs to playful memes, every creation is an opportunity
+                        to explore new artistic horizons.
+                    </p>
+                    </div>
+
+                    <div id="tab2" class="tab-content hidden px-5 py-12">
+                    <div class="flex justify-center">
+                        <img
+                        src="./assets/images/svg/community-card2.svg"
+                        alt="icon"
+                        />
+                    </div>
+                    <h2
+                        class="ff_Oswald text-white text-xl sm:text-2xl lg:text-[28px] font-bold pt-5 pb-4 text-center"
+                    >
+                        Community
+                    </h2>
+                    <p class="ff_k2d text-white text-center opacity-70">
+                        Our community is the heart and soul of SPRT. We're a
+                        diverse, passionate group of artists, technologists, and
+                        enthusiasts united by a common love for art, technology, and
+                        humor. Together, we collaborate, share ideas, and build a
+                        vibrant space where everyone's voice is heard and valued.
+                    </p>
+                    </div>
+
+                    <div id="tab3" class="tab-content hidden px-5 py-12">
+                    <div class="flex justify-center">
+                        <img
+                        src="./assets/images/svg/community-card3.svg"
+                        alt="icon"
+                        />
+                    </div>
+                    <h2
+                        class="ff_Oswald text-white text-xl sm:text-2xl lg:text-[28px] font-bold pt-5 pb-4 text-center"
+                    >
+                        Innovation
+                    </h2>
+                    <p class="ff_k2d text-white text-center opacity-70">
+                        At SPRT, innovation is our hallmark. We're pioneers in
+                        blending AI technology with artistic endeavors on the Solana
+                        blockchain. Our commitment to innovation drives us to
+                        constantly explore new possibilities, disrupting
+                        conventional norms to create something truly unique in the
+                        crypto art space.
+                    </p>
+                    </div>
+                    <div id="tab4" class="tab-content hidden px-5 py-12">
+                    <div class="flex justify-center">
+                        <img
+                        src="./assets/images/svg/community-card4.svg"
+                        alt="icon"
+                        />
+                    </div>
+                    <h2
+                        class="ff_Oswald text-white text-xl sm:text-2xl lg:text-[28px] font-bold pt-5 pb-4 text-center"
+                    >
+                        Humor
+                    </h2>
+                    <p class="ff_k2d text-white text-center opacity-70">
+                        Laughter is the essence of SPRT. Humor infuses life into our
+                        creations, making them not just visually appealing but also
+                        enjoyable. We believe in the power of humor to connect,
+                        resonate, and spread joy across our community and beyond.
+                    </p>
+                    </div>
+                </div>
+                </div>
             </div>
-          </div>
+            </div>
         </div>
-      </div>
-    </div>
-    <script>
-      // navbar
-      function toggleMenu() {
-        const mobileMenu = document.getElementById("mobile-menu");
-        const menuIcon = document.getElementById("menu-icon");
-        const crossIcon = document.getElementById("cross-icon");
-        mobileMenu.classList.toggle("translate-x-0");
-        menuIcon.classList.toggle("hidden");
-        crossIcon.classList.toggle("hidden");
-      }
-
-      // tabs
-      // Show the default active tab on page load
-      document.addEventListener("DOMContentLoaded", function () {
-        showTab("tab1");
-      });
-
-      function showTab(tabId) {
-        // Hide all tabs
-        const tabs = document.querySelectorAll(".tab-content");
-        tabs.forEach((tab) => {
-          tab.classList.add("hidden");
-        });
-
-        // Remove red color from all buttons
-        const buttons = document.querySelectorAll(".tab-button");
-        buttons.forEach((button) => {
-          button.style.color = ""; // Remove the red color from all buttons
-        });
-
-        // Show the selected tab
-        const selectedTab = document.getElementById(tabId);
-        if (selectedTab) {
-          selectedTab.classList.remove("hidden");
+        </div>
+        <script>
+        // navbar
+        function toggleMenu() {
+            const mobileMenu = document.getElementById("mobile-menu");
+            const menuIcon = document.getElementById("menu-icon");
+            const crossIcon = document.getElementById("cross-icon");
+            mobileMenu.classList.toggle("translate-x-0");
+            menuIcon.classList.toggle("hidden");
+            crossIcon.classList.toggle("hidden");
         }
 
-        // Add red color to the clicked button
-        const clickedButton = document.getElementById(
-          `tabButton${tabId.charAt(tabId.length - 1)}`
-        );
-        if (clickedButton) {
-          clickedButton.style.color = "#ff0000"; // Set the red color for the active button
+        // tabs
+        // Show the default active tab on page load
+        document.addEventListener("DOMContentLoaded", function () {
+            showTab("tab1");
+        });
+
+        function showTab(tabId) {
+            // Hide all tabs
+            const tabs = document.querySelectorAll(".tab-content");
+            tabs.forEach((tab) => {
+            tab.classList.add("hidden");
+            });
+
+            // Remove red color from all buttons
+            const buttons = document.querySelectorAll(".tab-button");
+            buttons.forEach((button) => {
+            button.style.color = ""; // Remove the red color from all buttons
+            });
+
+            // Show the selected tab
+            const selectedTab = document.getElementById(tabId);
+            if (selectedTab) {
+            selectedTab.classList.remove("hidden");
+            }
+
+            // Add red color to the clicked button
+            const clickedButton = document.getElementById(
+            `tabButton${tabId.charAt(tabId.length - 1)}`
+            );
+            if (clickedButton) {
+            clickedButton.style.color = "#ff0000"; // Set the red color for the active button
+            }
         }
-      }
-    </script>
-  </body>
-</html>
+        </script>
+    </body>
+    </html>
