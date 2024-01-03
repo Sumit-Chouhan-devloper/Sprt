@@ -5,11 +5,6 @@
 .ff_Oswald {
   font-family: "Oswald", "sans serif";
 }
-
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 .common_button_border {
   background: radial-gradient(
       120.14% 119.17% at 93.56% 8%,
@@ -81,6 +76,12 @@
       #8b00bd 93.65%
     );
     filter: blur(100px);
+  }
+  .community_card_bg{
+    border-radius: 314px;
+opacity: 0.5;
+background: radial-gradient(120.14% 119.17% at 93.56% 8%, #00E0F7 0%, #8B00BD 93.65%);
+filter: blur(100px);
   }
 
 @media (min-width: 1024px) {
