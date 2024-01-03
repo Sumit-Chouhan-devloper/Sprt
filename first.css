@@ -91,3 +91,120 @@
     background: radial-gradient(120.14% 119.17% at 93.56% 58%, rgba(0, 224, 247, 0.80) 0%, #8B00BD 88.12%);
   }
 
+
+  /* kapil css */
+
+  .bg_our_mission {
+    background-image: url("./assets/images/png/Mesa\ de\ trabajo.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .footer_bg_img {
+    background-image: url("./assets/images/webp/Asset-1mdpi-1.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .border_color {
+    border-color: rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.05);
+  }
+  .border_redefining {
+    background: rgba(255, 255, 255, 0.02);
+    backdrop-filter: blur(20px);
+  }
+  .Our_community {
+    border-radius: 12px;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.02);
+    backdrop-filter: blur(20px);
+  }
+  .bottom_line::after {
+    content: "";
+    width: 201px;
+    height: 10px;
+    position: absolute;
+    bottom: 0;
+    left: 65px;
+    border-radius: 10.5px 10.5px 0px 0px;
+    background: linear-gradient(176deg, #3ad0f3 -163.94%, #8c01be 130.09%);
+  }
+  .cricale_card::before {
+    content: "";
+    position: absolute;
+    border-radius: 354px;
+    opacity: 0.3;
+    z-index: -1;
+    width: 294px;
+    height: 354px;
+    bottom: 0;
+    background: radial-gradient(
+      120.14% 119.17% at 93.56% 8%,
+      #00e0f7 0%,
+      #8b00bd 93.65%
+    );
+    filter: blur(100px);
+  }
+  .Arrow_button:hover .next_button {
+    opacity: 0%;
+    transition: all 250ms linear;
+  }
+  .Arrow_button:hover .next_button_two {
+    opacity: 100%;
+    transition: all 250ms linear;
+  }
+  .Arrow_button .next_button_two {
+    opacity: 0%;
+    transition: all 250ms linear;
+  }
+  .Arrow_button.next_button {
+    opacity: 100%;
+    transition: all 250ms linear;
+  }
+  .blur_our_mission {
+    background: radial-gradient(
+      120.14% 119.17% at 93.56% 8%,
+      #00e0f7 0%,
+      #8b00bd 93.65%
+    );
+    filter: blur(100px);
+  }
+  .filter_blur {
+    filter: blur(367.30413818359375px);
+  }
+  .Community_owned_card {
+    border: solid rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.02);
+    backdrop-filter: blur(20px);
+  }
+  .Community_owned_card::after {
+    content: "";
+    position: absolute;
+    background: radial-gradient(
+      92.75% 92% at 93.56% 8%,
+      #00e0f7 0%,
+      #8b00bd 93.65%
+    );
+    filter: blur(76.12359619140625px);
+    opacity: 0.4;
+    top: -13px;
+    width: 253px;
+    left: -53px;
+    z-index: -1;
+    height: 138px;
+  }
+  .Community_owned_card::before {
+    left: 27px;
+    content: "";
+    position: absolute;
+    width: 199px;
+    height: 5px;
+    border-radius: 10.5px 10.5px 0px 0px;
+    background: linear-gradient(176.26deg, #3ad0f3 -163.94%, #8c01be 130.09%);
+    bottom: 0;
+  }
+  @media (max-width: 576.98px) {
+    .Community_owned_card::after {
+      width: 0px;
+      height: 0px;
+    }
+  }
