@@ -1186,9 +1186,12 @@
         <p
           class="ff_k2d text-white opacity-70 max-w-[691px] mx-auto text-center font-normal text-xs sm:text-[16px] leading-[150%] mt-2 sm:mt-5"
         >
-          Copyright ©2024 SPRT (All Rights reserved)
+          Copyright © <span id="myYear"></span> PRT (All Rights reserved)
         </p>
       </footer>
+      <button onclick="backToTop()" id="topbtn" class="fixed hover:scale-105 !z-[60] transittion-all duration-300 bottom-[3%] right-[3%] rotate-90">
+        <img src="./assets/images/svg/Arrow-2.svg" alt="arrow">
+    </button>
     </div>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
@@ -1241,6 +1244,27 @@
       });
     </script>
     <script>
+      // date function
+      document.getElementById("myYear").innerHTML = new Date().getFullYear();
+
+      // backtotop
+      const topbtn = document.getElementById('topbtn');
+        window.onscroll = function () { topscroll() };
+
+        function topscroll() {
+            if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+                topbtn.style.display = "block";
+            }
+            else {
+                topbtn.style.display = "none";
+            }
+        }
+
+        function backToTop() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+
       // navbar
       function toggleMenu() {
         const mobileMenu = document.getElementById("mobile-menu");
