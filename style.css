@@ -248,3 +248,11 @@ html {
     height: 0px;
   }
 }
+@media (min-width:1921px) and(min-height:1100px){
+  .custom_vh{
+    min-height: auto !important;
+    max-height: 1080px !important;
+  }
+  
+  
+}
