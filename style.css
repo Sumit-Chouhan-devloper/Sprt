@@ -5,7 +5,8 @@
 .ff_Oswald {
   font-family: "Oswald", "sans serif";
 }
-body,html{
+body,
+html {
   scroll-behavior: smooth !important;
 }
 .common_button_border {
@@ -179,6 +180,11 @@ body,html{
 }
 .filter_blur {
   filter: blur(367.30413818359375px);
+  background: radial-gradient(
+    92.75% 92% at 93.56% 8%,
+    #00e0f7 0%,
+    #8b00bd 93.65%
+  );
 }
 .Community_owned_card {
   border: solid rgba(255, 255, 255, 0.1);
