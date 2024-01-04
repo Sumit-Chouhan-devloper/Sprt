@@ -5,6 +5,9 @@
 .ff_Oswald {
   font-family: "Oswald", "sans serif";
 }
+body,html{
+  scroll-behavior: smooth !important;
+}
 .common_button_border {
   background: radial-gradient(
       120.14% 119.17% at 93.56% 8%,
