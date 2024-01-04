@@ -58,7 +58,13 @@
     />
   </head>
   <body>
+
     <div class="!overflow-hidden">
+      <div class="loader_bg" id="preLoader">
+        <div class="loader">
+          <img src="./assets/images/png/logo.png" alt="" class="preloader" />
+        </div>
+      </div>
       <!---------------------------------------header section----------------------------------- -->
       <header
         class="bg-[url('/assets/images/webp/hero-mobile-bg.webp')] sm:bg-[url('/assets/images/webp/hero-bg.webp')] bg-no-repeat min-h-screen flex flex-col bg-cover pt-4 sm:pt-5 relative"
@@ -1355,6 +1361,12 @@
           console.log("Clicked button not found");
         }
       }
+    </script>
+     <script>
+      setTimeout(function () {
+        document.getElementById("preLoader").classList.add("removeloader");
+        document.body.classList.remove("loading");
+      }, 3000);
     </script>
   </body>
 </html>
