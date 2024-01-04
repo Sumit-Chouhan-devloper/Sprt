@@ -221,7 +221,16 @@
   background: rgba(255, 255, 255, 0.02);
 }
 .filter_blur_img {
+  background: linear-gradient(
+    180deg,
+    #000000 37.24%,
+    rgba(0, 0, 0, 0.01) 88.23%
+  );
   filter: blur(25px);
+}
+.blur_lips {
+  background: linear-gradient(180deg, #0c0414 35.45%, rgba(0, 0, 0, 0.01) 100%);
+  filter: blur(8px);
 }
 @media (max-width: 576.98px) {
   .Community_owned_card::after {

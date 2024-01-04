@@ -682,7 +682,7 @@
         <img
           src="./assets/images/png/colout.png"
           alt="colout"
-          class="absolute h-52 bottom-0 md:bottom-[-10px] w-full"
+          class="absolute h-52 bottom-0 md:bottom-[-10px] w-full z-[3]"
         />
         <img
           src="./assets/images/webp/circle_img.webp"
@@ -690,15 +690,18 @@
           class="absolute w-[250px] z-40 sm:w-[500px] top-[-95px] sm:top-[-122px] left-[-95px] sm:left-[121px] md:left-[-225px] md:top-[-220px]"
         />
         <div
-          class="blur_our_mission absolute w-[900px] h-[900px] rounded-[1121px] opacity-15 right-[-20%]"
+          class="blur_our_mission absolute w-[900px] h-[900px] rounded-[1121px] opacity-15 right-[-20%] z-[4]"
         ></div>
         <div
           class="container lg:max-w-[1140px] mx-auto py-3 px-3 relative z-10"
         >
           <div class="flex flex-wrap flex-col-reverse lg:flex-row">
             <div
-              class="w-full lg:w-6/12 px-2 sm:px-3 flex justify-center lg:justify-end items-end mt-7 lg:mt-0"
+              class="w-full lg:w-6/12 px-2 sm:px-3 flex justify-center lg:justify-end items-end mt-7 lg:mt-0 relative"
             >
+              <div
+                class="absolute max-w-[551px] w-full h-[90px] bottom-[-71px] blur_lips"
+              ></div>
               <img
                 src="./assets/images/webp/image-12.webp"
                 alt=" OurMission"
@@ -801,7 +804,7 @@
 
           <div class="responsive mt-10">
             <div
-              class="Our_community pt-4 pb-10 px-4 relative bottom_line cricale_card overflow-hidden max-w-[370px] w-full mx-3 !min-h-[496px]"
+              class="Our_community pt-4 pb-10 px-4 relative bottom_line cricale_card overflow-hidden max-w-[370px] w-full mx-3 !min-h-[450px] sm:!min-h-[484px]"
             >
               <div class="relative">
                 <img
@@ -823,7 +826,7 @@
                 Meme Competitions
               </h3>
               <p
-                class="font-normal text-sm sm:text-[16px] opacity-70 text-white ff_k2d"
+                class="font-normal text-sm sm:text-[15px] opacity-70 text-white ff_k2d"
               >
                 Get creative and win prizes for the most witty, relevant and
                 engaging memes on Solana.
@@ -849,7 +852,7 @@
               </div>
             </div>
             <div
-              class="Our_community pt-4 pb-10 px-4 relative bottom_line cricale_card overflow-hidden max-w-[370px] w-full mx-3 !min-h-[496px]"
+              class="Our_community pt-4 pb-10 px-4 relative bottom_line cricale_card overflow-hidden max-w-[370px] w-full mx-3 !min-h-[450px] sm:!min-h-[484px]"
             >
               <div class="relative">
                 <img
@@ -871,7 +874,7 @@
               >
                 AMA’s
               </h3>
-              <p class="font-normal text-[16px] opacity-70 text-white ff_k2d">
+              <p class="font-normal text-[15px] opacity-70 text-white ff_k2d">
                 Ask the questions that are on your mind, and engage in fun
                 conversations with the creators.
               </p>
@@ -896,7 +899,7 @@
               </div>
             </div>
             <div
-              class="Our_community pt-4 pb-10 px-4 relative bottom_line cricale_card overflow-hidden max-w-[370px] w-full !min-h-[496px] mx-3"
+              class="Our_community pt-4 pb-10 px-4 relative bottom_line cricale_card overflow-hidden max-w-[370px] w-full !min-h-[450px] mx-3 sm:!min-h-[484px]"
             >
               <div class="relative">
                 <img
@@ -918,7 +921,7 @@
                 AI video competitions
               </h3>
               <p
-                class="font-normal text-sm sm:text-[16px] opacity-70 text-white ff_k2d"
+                class="font-normal text-sm sm:text-[15px] opacity-70 text-white ff_k2d"
               >
                 Utilize cutting edge technology to craft amazing AI videos and
                 share them with the community for a chance to win prizes.
@@ -944,7 +947,7 @@
               </div>
             </div>
             <div
-              class="Our_community pt-4 pb-10 px-4 relative bottom_line cricale_card overflow-hidden max-w-[370px] w-full mx-3 !min-h-[496px]"
+              class="Our_community pt-4 pb-10 px-4 relative bottom_line cricale_card overflow-hidden max-w-[370px] w-full mx-3 !min-h-[450px] sm:!min-h-[484px]"
             >
               <div class="relative">
                 <img
@@ -966,7 +969,7 @@
               >
                 AMA’s
               </h3>
-              <p class="font-normal text-[16px] opacity-70 text-white ff_k2d">
+              <p class="font-normal text-[15px] opacity-70 text-white ff_k2d">
                 Ask the questions that are on your mind, and engage in fun
                 conversations with the creators.
               </p>
@@ -1217,9 +1220,13 @@
           Copyright © <span id="myYear"></span> PRT (All Rights reserved)
         </p>
       </footer>
-      <button onclick="backToTop()" id="topbtn" class="fixed hover:scale-105 !z-[60] transittion-all duration-300 bottom-[3%] right-[3%] rotate-90">
-        <img src="./assets/images/svg/Arrow-2.svg" alt="arrow">
-    </button>
+      <button
+        onclick="backToTop()"
+        id="topbtn"
+        class="fixed hover:scale-105 !z-[60] transittion-all duration-300 bottom-[3%] right-[3%] rotate-90"
+      >
+        <img src="./assets/images/svg/Arrow-2.svg" alt="arrow" />
+      </button>
     </div>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
@@ -1276,22 +1283,26 @@
       document.getElementById("myYear").innerHTML = new Date().getFullYear();
 
       // backtotop
-      const topbtn = document.getElementById('topbtn');
-        window.onscroll = function () { topscroll() };
+      const topbtn = document.getElementById("topbtn");
+      window.onscroll = function () {
+        topscroll();
+      };
 
-        function topscroll() {
-            if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
-                topbtn.style.display = "block";
-            }
-            else {
-                topbtn.style.display = "none";
-            }
+      function topscroll() {
+        if (
+          document.body.scrollTop > 200 ||
+          document.documentElement.scrollTop > 200
+        ) {
+          topbtn.style.display = "block";
+        } else {
+          topbtn.style.display = "none";
         }
+      }
 
-        function backToTop() {
-            document.body.scrollTop = 0;
-            document.documentElement.scrollTop = 0;
-        }
+      function backToTop() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
 
       // navbar
       function toggleMenu() {
