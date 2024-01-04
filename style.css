@@ -110,16 +110,6 @@
 
 /* kapil css */
 
-.bg_our_mission {
-  background-image: url("./assets/images/png/Mesa\ de\ trabajo.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.footer_bg_img {
-  background-image: url("./assets/images/webp/Asset-1mdpi-1.webp");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
 .border_color {
   border-color: rgba(255, 255, 255, 0.1);
   background: rgba(255, 255, 255, 0.05);
