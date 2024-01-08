@@ -374,6 +374,9 @@ html {
   -webkit-filter: blur(25px);
   filter: blur(25px);
 }
+#more-card {
+  display: none;
+}
 
 @media (max-width: 576.98px) {
   .Community_owned_card::after {

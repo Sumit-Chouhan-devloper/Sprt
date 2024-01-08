@@ -1,4 +1,3 @@
-
 $(".responsive").slick({
   dots: false,
   infinite: true,
@@ -44,10 +43,10 @@ $(".responsive").slick({
   ],
 });
 
-// date function
+//----------------------------------------------------------------------------- date function
 document.getElementById("myYear").innerHTML = new Date().getFullYear();
 
-// backtotop
+//------------------------------------------------------------------------------ backtotop
 const topbtn = document.getElementById("topbtn");
 window.onscroll = function () {
   topscroll();
@@ -69,7 +68,7 @@ function backToTop() {
   document.documentElement.scrollTop = 0;
 }
 
-// navbar
+//------------------------------------------------------------------------------------ navbar
 function toggleMenu() {
   const mobileMenu = document.getElementById("mobile-menu");
   const menuIcon = document.getElementById("menu-icon");
@@ -86,7 +85,7 @@ function toggleMenu() {
   document.body.classList.toggle("overflow-hidden");
 }
 
-// tabs
+//----------------------------------------------------------------- tabs
 document.addEventListener("DOMContentLoaded", function () {
   showTab("tab1", "1");
 });
@@ -114,5 +113,18 @@ function showTab(tabId, buttonId) {
     clickedButton.classList.add("active");
   } else {
     console.log("Clicked button not found");
+  }
+}
+//-------------------------------------------------------------- read more
+function toggleShowMore() {
+  let moreCard = document.getElementById("more-card");
+  let showMoreButton = document.getElementById("show-more-button");
+
+  if (moreCard.style.display === "none" || moreCard.style.display === "") {
+    moreCard.style.display = "inline-block"; // or "block" depending on your needs
+    showMoreButton.innerHTML = "View Less";
+  } else {
+    showMoreButton.innerHTML = "View more";
+    moreCard.style.display = "none";
   }
 }
